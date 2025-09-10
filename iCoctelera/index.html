@@ -7,23 +7,55 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>iCoctel 🍸</h1>
         <p>¡Tu guía de coctelería para todos los niveles!</p>
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Inicio</a>
             <a href="libros.html">Libros</a>
             <a href="recetas.html">Recetas</a>
             <a href="contacto.html">Contacto</a>
+            <input type="text" placeholder="Buscar...">
         </nav>
+
     </header>
 
+    <!-- Main Content -->
     <main>
-        <h2>Bienvenido</h2>
-        <p>Explora el fascinante mundo de los cócteles.</p>
-        <img src="img/mojito.jpg" alt="foto mojito hd" class="imagen-principal">
+        <!-- Bienvenida -->
+        <section class="bienvenida">
+            <h2>Bienvenido</h2>
+            <p>Explora el fascinante mundo de los cócteles.</p>
+        </section>
+
+        <!-- Cóctel del día -->
+        <section class="main-content" style="display: flex; gap: 2rem; align-items: flex-start;">
+            <div class="card" style="display: flex; flex: 2; gap: 1.5rem; align-items: flex-start;">
+                <img src="img/mojito.jpg" alt="foto mojito hd" class="imagen-principal" style="max-width: 220px; border-radius: 8px;">
+                <div>
+                    <h2>Cóctel de Día</h2>
+                    <p>
+                        El Mojito es un clásico cóctel de origen cubano, conocido por su sabor refrescante y balance perfecto entre dulzura,
+                        acidez y frescura. Tradicionalmente se prepara con ron blanco, hojas de hierbabuena (menta), azúcar, jugo de lima y soda,
+                        servido con hielo triturado. Su perfil ligero y aromático lo convierte en una opción ideal para días calurosos 
+                        o como aperitivo antes de una comida. Además de ser delicioso, el Mojito es apreciado por su simplicidad y versatilidad,
+                        ya que puede adaptarse con frutas o licores adicionales para crear variaciones modernas.
+                    </p>
+                </div>
+            </div>
+            <aside class="popular" style="flex: 1;">
+                <h3>Cócteles populares</h3>
+                <ul>
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                </ul>
+            </aside>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 iCoctel - Todos los derechos reservados.</p>
     </footer>
