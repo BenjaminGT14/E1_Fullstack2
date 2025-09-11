@@ -178,13 +178,14 @@ footer p {
 
 .card {
     display: flex;
-    gap: 1.5rem;
-    align-items: stretch; /* Hace que los hijos tengan la misma altura */
+    flex-direction: row;      /* Cambia a fila para poner la imagen a la izquierda */
+    align-items: flex-start;  /* Alinea arriba */
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     padding: 1.5rem;
     margin: 1rem 0;
+    gap: 1.5rem;              /* Espacio entre imagen y contenido */
 }
 
 .card:hover {
@@ -197,6 +198,20 @@ footer p {
     object-fit: cover;
     border-radius: 8px;
     display: block;
+}
+
+.card-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0;                /* Elimina el margen automático */
+}
+
+/* Opcional: para que el contenido textual ocupe el resto del espacio */
+.card > *:not(.card-img) {
+    flex: 1;
 }
 
 .navbar {
