@@ -59,7 +59,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Main */
+/* Main general */
 main {
   max-width: 1200px;
   margin: 40px auto;
@@ -130,6 +130,56 @@ main {
   list-style: disc inside;
 }
 
+/* --- NUEVO: Estilos para el formulario de contacto --- */
+main form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+main form input,
+main form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+main form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main form button:hover {
+  background-color: #005fa3;
+}
+
+/* Apartado teléfono */
+.telefono {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background: #eee;
@@ -177,53 +227,53 @@ footer p {
 }
 
 .card {
-    display: flex;
-    flex-direction: row;      /* Cambia a fila para poner la imagen a la izquierda */
-    align-items: flex-start;  /* Alinea arriba */
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    padding: 1.5rem;
-    margin: 1rem 0;
-    gap: 1.5rem;              /* Espacio entre imagen y contenido */
+  display: flex;
+  flex-direction: row;      /* Cambia a fila para poner la imagen a la izquierda */
+  align-items: flex-start;  /* Alinea arriba */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  gap: 1.5rem;              /* Espacio entre imagen y contenido */
 }
 
 .card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 
 .card .imagen-principal {
-    height: 100%;
-    max-width: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
+  height: 100%;
+  max-width: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
 
 .card-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    margin: 0;                /* Elimina el margen automático */
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0;                /* Elimina el margen automático */
 }
 
 /* Opcional: para que el contenido textual ocupe el resto del espacio */
 .card > *:not(.card-img) {
-    flex: 1;
+  flex: 1;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar input[type="text"] {
-    margin-left: auto;
-    max-width: 220px;
-    padding: 0.4em 1em;
-    border-radius: 20px;
-    border: 1px solid #ccc;
+  margin-left: auto;
+  max-width: 220px;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
