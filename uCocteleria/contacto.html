@@ -14,28 +14,44 @@
             <a href="cursos.html">Cursos</a>
             <a href="recetas.html">Recetas</a>
             <a href="contacto.html">Contacto</a>
-            <input type="text" placeholder="Buscar...">
         </nav>
     </header>
 
     <main>
-        <h2 style="text-align: center; margin-bottom: 20px;">¡Contáctanos para más información o solicitar un curso!</h2>
-
-        <form>
-            <label>Nombre:<br><input type="text" required></label>
-            <label>Email:<br><input type="email" required></label>
-            <label>Mensaje:<br><textarea required></textarea></label>
-            <button type="button" onclick="enviarMensaje()">Enviar</button>
-        </form>
-
-        <div class="telefono">
-            📞 Teléfono: +56 9 1234 5678
-        </div>
+        <section class="contact-section">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes preguntas o quieres reservar un curso? Escríbenos.</p>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); enviarMensaje();">
+                    <div class="form-row">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar</button>
+                    </div>
+                </form>
+                <div class="contact-info">
+                    <p>📞 Teléfono: <a href="tel:+56912345678">+56 9 1234 5678</a></p>
+                    <p>📍 Dirección: Santiago, Chile</p>
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <footer>
-        <p>&copy; 2025 iCoctel - Todos los derechos reservados.</p>
+    <p>&copy; 2025 uCocteleria - Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
