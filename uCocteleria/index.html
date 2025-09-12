@@ -16,7 +16,6 @@
             <a href="cursos.html">Cursos</a>
             <a href="recetas.html">Recetas</a>
             <a href="contacto.html">Contacto</a>
-            <input type="text" placeholder="Buscar...">
         </nav>
 
     </header>
@@ -30,9 +29,10 @@
         </section>
 
         <!-- Cóctel del día -->
-        <section class="main-content" style="display: flex; gap: 2rem; align-items: flex-start;">
-            <div class="card" style="display: flex; flex: 2; gap: 1.5rem; align-items: flex-start;">
-                <img src="img/terremoto.jpg" alt="foto mojito hd" class="imagen-principal" style="max-width: 220px; border-radius: 8px;">
+        <section class="main-content">
+            <!-- Card principal: Terremoto -->
+            <div class="card card-dia">
+                <img src="img/terremoto.jpg" alt="foto mojito hd" class="imagen-principal">
                 <div>
                     <h2>Cóctel de Día: Terremoto (Chile)</h2>
                     <p>
@@ -45,15 +45,58 @@
                     </p>
                 </div>
             </div>
-            <div class="card" style="display: flex; flex: 2; gap: 1.5rem; align-items: flex-start;">
-                <div>
-                    <h2>Cócteles populares</h2>
+
+            <!-- Cards pequeñas de cócteles populares -->
+            <h2 class="populares-titulo">Cócteles populares</h2>
+            <div class="cards-container cards-populares">
+                <!-- Daikiri -->
+                <div class="card card-popular">
+                    <img src="img/daiquiri.jpg" alt="Daiquiri" class="card-img card-img-popular">
+                    <h3>Daiquiri <span>(Cuba)</span></h3>
                     <ul>
-                    <li>Daikiri</li>
-                    <li>Margarita</li>
-                    <li>Tropical Gin</li>
-                    <li>Mojito</li>
+                        <li>60 ml ron blanco</li>
+                        <li>30 ml jugo de lima</li>
+                        <li>15 ml jarabe de azúcar</li>
                     </ul>
+                    <p><strong>Preparación:</strong> Agitar con hielo y colar en copa.<br>
+                    En una coctelera con hielo, mezcla el ron, el jugo de lima y el jarabe de azúcar. Agita enérgicamente y sirve colando en una copa de cóctel fría. Opcional: decorar con una rodaja fina de lima.</p>
+                </div>
+                <!-- Margarita -->
+                <div class="card card-popular">
+                    <img src="img/margarita.jpg" alt="Margarita" class="card-img card-img-popular">
+                    <h3>Margarita <span>(México)</span></h3>
+                    <ul>
+                        <li>50 ml tequila</li>
+                        <li>25 ml triple sec</li>
+                        <li>25 ml jugo de lima</li>
+                    </ul>
+                    <p><strong>Preparación:</strong> Agitar con hielo, servir en copa escarchada con sal.<br>
+                    Escarcha la copa con sal. En una coctelera, agrega tequila, triple sec y jugo de lima con hielo. Agita bien hasta enfriar. Sirve colando el contenido en la copa escarchada. Decora con una rodaja de lima.</p>
+                </div>
+                <!-- Gin Tonic -->
+            <div class="card card-popular">
+                <img src="img/gin_tonic.jpg" alt="Gin Tonic" class="card-img card-img-popular">
+                <h3>Gin Tonic <span>(Inglaterra)</span></h3>
+                <ul>
+                    <li>50 ml ginebra</li>
+                    <li>150 ml tónica</li>
+                </ul>
+                <p><strong>Preparación:</strong> Servir en vaso con hielo y limón o pepino.<br>
+                Llena un vaso con hielo, añade ginebra y completa con tónica. Remueve suavemente y decora con una rodaja de limón, lima o pepino según tu preferencia.</p>
+            </div>
+                <!-- Mojito -->
+                <div class="card card-popular">
+                    <img src="img/mojito.jpg" alt="Mojito" class="card-img card-img-popular">
+                    <h3>Mojito <span>(Cuba)</span></h3>
+                    <ul>
+                        <li>50 ml ron blanco</li>
+                        <li>6 hojas de hierbabuena</li>
+                        <li>2 cucharaditas de azúcar</li>
+                        <li>25 ml jugo de lima</li>
+                        <li>Soda y hielo picado</li>
+                    </ul>
+                    <p><strong>Preparación:</strong> Machacar la hierbabuena con azúcar y lima, añadir ron, hielo y completar con soda.<br>
+                    Machaca suavemente las hojas de hierbabuena con el azúcar y el jugo de lima en un vaso alto. Añade el ron y llena el vaso con hielo picado. Completa con soda y mezcla ligeramente. Decora con una ramita de hierbabuena y una rodaja de lima.</p>
                 </div>
             </div>
         </section>
@@ -61,7 +104,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 iCoctel - Todos los derechos reservados.</p>
+    <p>&copy; 2025 uCocteleria - Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
